@@ -55,7 +55,7 @@ const user = ethers.Wallet.createRandom().connect(provider)
     ]
     const body = {
       params,
-      method: 'eth_sendBundle',
+      method: 'minercollator_sendBundle',
       id: '123'
     }
     const respRaw = await fetch('http://localhost:8545', {
