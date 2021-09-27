@@ -7,12 +7,12 @@ the block's coinbase if it's known ahead of time.
 ## Quickstart
 
 ```
-git clone https://github.com/flashbots/mev-geth
-cd mev-geth && make geth && cd ..
-git clone https://github.com/flashbots/mev-geth-demo
+git clone https://github.com/jwasinger/geth-mev-plugin && cd geth-mev-plugin && make
+git clone https://github.com/jwasinger/mev-geth-demo -b plugin
+# copy geth and mev.plugin built in the geth-mev-plugin folder to the mev-geth-demo folder
 cd mev-geth-demo
 yarn
-GETH=../mev-geth/build/bin/geth ./run.sh
+./run.sh
 yarn run demo-simple
 yarn run demo-contract
 ```
